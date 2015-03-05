@@ -164,7 +164,8 @@ public with sharing class SObjectDataLoader
 				  'CreatedById',
 				  'LastModifiedById',
 				  'RecordTypeId',
-				  'ProfileId'
+				  'ProfileId',
+				  'CollaborationGroupId'
 				};
 				
 		// Standard child relationships that are not included when using the auto config
@@ -182,7 +183,9 @@ public with sharing class SObjectDataLoader
 				  'NotesAndAttachments', 
 				  'OpenActivities', 
 				  'Histories', 
-				  'Feeds'};		
+				  'Feeds',
+				  'RecordAssociatedGroups'
+				};		
 	
 		// Standard RefernceTo that are not included when using the auto config	
 		private Set<String> referenceToWhitelist = 
